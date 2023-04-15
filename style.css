@@ -3,32 +3,106 @@ body{
   margin: 0px;
   background-color: #1F2937;
 }
-/* Header Section */
+/* Global CSS */
+/* Button Inputs */
+button{
+  background-color: #3882f6;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+  color: white;
+}
+/* Header*/
 header{
   display: flex;
   align-items: center;
   justify-content:space-around;
 }
-
 nav{
   display: flex;
   gap: 25px;
 }
 
-/* Main Content Top */
+/* Main */
+main{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Top Section */
 section.sectionTop{
   display: flex;
-  justify-content: space-evenly;
-  padding: 100px;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
-.sec-top-left{
+.top-left-sec{
   width: 350px;
 }
-.sec-top-right{
+section.sectionTop .top-left-sec button{
+  border: hidden;
+}
+.top-right-sec{
   display: flex;
   width: 500px;
   height: 200px;
   justify-content: center;
   align-items: center;
   background-color: gray;
+}
+
+/* Middle-top Section */
+.middle-top-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: white;
+  gap: 30px;
+}
+.mt-boxes{
+  flex-basis: auto;
+  text-align: center;
+  border: 2px solid red;
+  border-radius: 25px;
+  padding: 100px;
+}
+/* Middle-Bottom Section */
+.middle-bottom-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #e5e7eb;
+}
+blockquote{
+  width: 30rem;
+  margin: 0px;
+}
+.middle-bottom-sec p{
+  position: relative;
+  left: 150px;
+}
+
+/* Above Footer Section */
+.abvFooter-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: white;
+}
+.abvFooter-sec .cta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 50%;
+  gap: 100px;
+  background-color: #3882f6;
 }
